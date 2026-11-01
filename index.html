@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#8b2858">
+<meta name="description" content="Anna Nicole Events creates beautiful balloon décor, custom backdrops, and memorable celebrations in Davenport, Florida.">
+<title>Anna Nicole Events | Balloon Décor & Event Styling</title>
+<style>
+:root{--wine:#7c244f;--rose:#f6dce7;--pink:#f8eef2;--gold:#c99d4b;--ink:#30242a;--muted:#74666c;--white:#fff;--line:#eadde2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0}.brand{font-family:Georgia,serif;color:var(--wine);font-size:1.2rem;font-weight:bold;letter-spacing:.02em}.navlinks{display:flex;gap:22px;font-size:.92rem;color:#59454f}.navcta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:12px 19px;font-weight:700;transition:.2s}.navcta,.btn.primary{background:var(--wine);color:#fff}.btn.secondary{border:1px solid var(--wine);color:var(--wine);background:#fff}.btn:hover,.navcta:hover{transform:translateY(-2px);filter:brightness(1.04)}
+.hero{background:linear-gradient(120deg,#fff8fb 0%,#f6dce7 55%,#fff 100%);padding:64px 0 58px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:42px}.eyebrow{text-transform:uppercase;letter-spacing:.17em;color:var(--wine);font-size:.76rem;font-weight:800}.hero h1{font:clamp(2.6rem,5vw,4.5rem)/1.05 Georgia,serif;letter-spacing:-.035em;margin:14px 0 18px;color:#4b2035}.hero p{font-size:1.08rem;color:#66545d;max-width:560px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.rating{margin-top:22px;font-size:.92rem;color:#66545d}.stars{color:#d8a52c;letter-spacing:2px}.hero-art{min-height:430px;position:relative;border-radius:28px;overflow:hidden;background:#e9d3dd;box-shadow:0 22px 55px #5c1d3920}
+.hero-art img{width:100%;height:100%;min-height:430px;object-fit:cover;display:block}.art-label{position:absolute;left:18px;right:18px;bottom:18px;background:#ffffffeb;border:1px solid #ffffffb0;padding:16px 18px;border-radius:18px;backdrop-filter:blur(8px)}.art-label strong{font:1.25rem Georgia,serif;color:var(--wine);display:block}.art-label span{font-size:.88rem;color:#68545e}
+section{padding:72px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 36px}.section-head .eyebrow{margin-bottom:8px;display:block}.section-head h2{font:clamp(2rem,3.8vw,3rem)/1.12 Georgia,serif;color:#4b2035;margin:0 0 12px}.section-head p{color:var(--muted);margin:0}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{padding:26px;border:1px solid var(--line);border-radius:20px;background:#fff;box-shadow:0 10px 28px #56243b08}.service .num{display:grid;place-items:center;width:44px;height:44px;border-radius:14px;background:var(--pink);color:var(--wine);font-weight:800;margin-bottom:18px}.service h3{font:1.35rem Georgia,serif;margin:0 0 8px;color:#4b2035}.service p{margin:0;color:var(--muted);font-size:.96rem}
+.gallery{background:#fff8fb}.gallery-grid{display:grid;grid-template-columns:1.15fr .85fr .85fr;grid-template-rows:220px 220px;gap:14px}.gallery-grid img{width:100%;height:100%;object-fit:cover;border-radius:18px;background:var(--rose)}.gallery-grid img:first-child{grid-row:span 2}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px;align-items:center}.about-card{border-radius:24px;background:var(--pink);padding:34px}.about-card blockquote{margin:0;font:1.6rem/1.35 Georgia,serif;color:#57243c}.about-card .stars{display:block;margin-top:18px}.about h2{font:clamp(2rem,3.8vw,3rem)/1.1 Georgia,serif;color:#4b2035;margin:10px 0 18px}.about p{color:var(--muted)}
+.contact{background:linear-gradient(135deg,#6f2048,#9b3c6b);color:white}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}.contact h2{font:clamp(2rem,4vw,3.2rem)/1.1 Georgia,serif;margin:10px 0 15px}.contact p{color:#f7e8ef}.contact .eyebrow{color:#f4d59d}.contact-details{background:#ffffff12;border:1px solid #ffffff38;border-radius:22px;padding:26px}.detail{padding:12px 0;border-bottom:1px solid #ffffff2b}.detail:last-child{border:0}.detail small{display:block;color:#f0dbe4}.contact .btn.primary{background:#fff;color:var(--wine)}.contact .btn.secondary{background:transparent;color:#fff;border-color:#ffffff9c}
+footer{padding:25px 0;color:#8a7880;font-size:.85rem;text-align:center}.sticky-contact{display:none}
+@media(max-width:800px){.navlinks{display:none}.hero{padding:42px 0}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero-art,.hero-art img{min-height:330px}.services{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:200px 170px}.gallery-grid img:first-child{grid-row:auto;grid-column:span 2}.contact-grid{gap:22px}section{padding:54px 0}.sticky-contact{display:flex;position:fixed;z-index:9;bottom:0;left:0;right:0;padding:10px 12px;background:#fff;border-top:1px solid var(--line);gap:10px;box-shadow:0 -8px 25px #28101b12}.sticky-contact a{flex:1;font-size:.9rem;padding:12px 8px}.sticky-space{height:68px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#top">Anna Nicole Events</a>
+  <nav class="navlinks" aria-label="Main navigation"><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  <a class="navcta" href="https://wa.me/18138087933?text=Hi%20Anna%20Nicole%20Events!%20I%27d%20like%20to%20ask%20about%20event%20decor." target="_blank" rel="noopener">Request a Quote ↗</a>
+ </div>
+</header>
+<main id="top">
+<section class="hero">
+ <div class="wrap hero-grid">
+  <div>
+   <span class="eyebrow">Balloon décor • Backdrops • Celebrations</span>
+   <h1>Beautiful details.<br>Unforgettable moments.</h1>
+   <p>Thoughtfully styled celebrations with balloon décor and custom backdrops—made to turn your special occasion into a moment worth remembering.</p>
+   <div class="actions"><a class="btn primary" href="https://wa.me/18138087933?text=Hi%20Anna%20Nicole%20Events!%20I%27d%20like%20a%20quote%20for%20event%20decor." target="_blank" rel="noopener">💬 Get a Quote on WhatsApp</a><a class="btn secondary" href="tel:+18138087933">☎ Call Now</a></div>
+   <div class="rating"><span class="stars">★★★★★</span> <strong>5.0 out of 5</strong> · 8 Google reviews</div>
+  </div>
+  <div class="hero-art">
+   <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1200&q=85" alt="Colorful balloons and festive event decorations">
+   <div class="art-label"><strong>Your occasion, beautifully styled</strong><span>Birthdays · Baby showers · Milestone celebrations</span></div>
+  </div>
+ </div>
+</section>
+<section id="services">
+ <div class="wrap">
+  <div class="section-head"><span class="eyebrow">What we do</span><h2>Décor that makes the moment</h2><p>Personalized styling to help your celebration feel special, welcoming, and photo-ready.</p></div>
+  <div class="services">
+   <article class="service"><div class="num">01</div><h3>Balloon Décor</h3><p>Statement balloon arrangements and color palettes designed to complement your event theme.</p></article>
+   <article class="service"><div class="num">02</div><h3>Custom Backdrops</h3><p>Decorative backdrops that create a beautiful focal point for photos, guests, and memories.</p></article>
+   <article class="service"><div class="num">03</div><h3>Baby Showers & More</h3><p>Sweet, celebratory setups for baby showers, birthdays, and other meaningful milestones.</p></article>
+  </div>
+ </div>
+</section>
+<section class="gallery" id="gallery">
+ <div class="wrap">
+  <div class="section-head"><span class="eyebrow">Inspiration</span><h2>A little celebration inspiration</h2><p>Explore the style and color ideas that can help shape your next event.</p></div>
+  <div class="gallery-grid">
+   <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1000&q=85" alt="Festive event setup with lights">
+   <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=800&q=85" alt="Elegant celebration table styling">
+   <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=800&q=85" alt="Party balloons and colorful decorations">
+  </div>
+  <p style="font-size:.82rem;color:#8a7880;text-align:center;margin-top:15px">Demo gallery images are illustrative stock photos. Replace with Anna Nicole Events’ own event photos before publishing.</p>
+ </div>
+</section>
+<section id="about">
+ <div class="wrap about-grid">
+  <div class="about-card"><blockquote>“The little details are what turn a celebration into a memory.”</blockquote><span class="stars">★★★★★</span><div style="color:#74666c;font-size:.9rem;margin-top:5px">Inspired by customer feedback on Google</div></div>
+  <div class="about">
+   <span class="eyebrow">About Anna Nicole Events</span><h2>Made with care for your special day</h2>
+   <p>From a welcoming backdrop to a colorful balloon display, Anna Nicole Events helps bring your celebration vision to life with thoughtful event styling.</p>
+   <p>Customers have praised the beautiful décor and attention to detail. Tell us what you’re celebrating, your preferred date, and the look you have in mind to start planning.</p>
+   <a class="btn primary" href="https://wa.me/18138087933?text=Hi!%20I%27m%20planning%20an%20event%20and%20would%20love%20to%20discuss%20decor." target="_blank" rel="noopener">Let’s Plan Your Event</a>
+  </div>
+ </div>
+</section>
+<section class="contact" id="contact">
+ <div class="wrap contact-grid">
+  <div><span class="eyebrow">Let’s make it memorable</span><h2>Tell us what you’re celebrating.</h2><p>Contact us to discuss your event, share your ideas, and ask about availability and pricing.</p><div class="actions"><a class="btn primary" href="https://wa.me/18138087933?text=Hi%20Anna%20Nicole%20Events!%20I%27d%20like%20to%20check%20availability%20for%20an%20event." target="_blank" rel="noopener">💬 WhatsApp Us</a><a class="btn secondary" href="tel:+18138087933">☎ +1 (813) 808-7933</a></div></div>
+  <div class="contact-details"><div class="detail"><strong>Phone</strong><small>+1 (813) 808-7933</small></div><div class="detail"><strong>Location</strong><small>2745 Cedar Ridge Ct, Davenport, FL 33837</small></div><div class="detail"><strong>Google rating</strong><small>★★★★★ 5.0 · 8 reviews</small></div><div style="padding-top:18px"><a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=Anna%20Nicole%20Events%2C%202745%20Cedar%20Ridge%20Ct%2C%20Davenport%2C%20FL%2033837" target="_blank" rel="noopener">Get Directions ↗</a></div></div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap">© <span id="year">2026</span> Anna Nicole Events. All rights reserved. <br>Website concept/demo. Confirm business details, service offerings, WhatsApp availability, and replace stock photos with owner-approved images before launch.</div></footer>
+<div class="sticky-space"></div>
+<div class="sticky-contact"><a class="btn secondary" href="tel:+18138087933">☎ Call</a><a class="btn primary" href="https://wa.me/18138087933?text=Hi%20Anna%20Nicole%20Events!%20I%27d%20like%20to%20ask%20about%20event%20decor." target="_blank" rel="noopener">WhatsApp</a></div>
+</body></html>
